@@ -1,7 +1,7 @@
 # Tabs Revolver
 
 A Browser extension for automatically revolving through open tabs.
-
+![logo](logo.png)
 ## Features
 * **Time Interval Selection:** A slider to choose the revolving time (from 3 to 120 seconds).
 * **Tab Customization:** Choose specific tabs to revolve or revolve all open tabs.
