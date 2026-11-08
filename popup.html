@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs Revolver</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Tabs Revolver</h2>
+    </header>
+
+    <!-- تفعيل الإضافة -->
+    <div class="card main-control">
+      <span class="label-title">Enable Revolving</span>
+      <label class="switch">
+        <input type="checkbox" id="enableToggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- شريط اختيار الوقت Value Bar -->
+    <div class="card">
+      <div class="range-header">
+        <label for="timeInterval">Time Interval:</label>
+        <span class="badge"><span id="timeValue">10</span> sec</span>
+      </div>
+      <input type="range" id="timeInterval" min="3" max="120" step="1" value="10">
+      <div class="range-limits">
+        <span>3s</span>
+        <span>60s</span>
+        <span>120s</span>
+      </div>
+    </div>
+
+    <!-- قسم الإعدادات -->
+    <div class="card settings-section">
+      <h3>Settings</h3>
+      
+      <!-- خيار الإيقاف عند الانتقال لتبويب آخر -->
+      <label class="checkbox-container">
+        <input type="checkbox" id="disableOnSwitch">
+        <span class="checkmark"></span>
+        Disable when I get to another tab
+      </label>
+
+      <hr class="divider">
+
+      <!-- قائمة إضافة التبويبات -->
+      <div class="tabs-header">
+        <span>Add Tabs to List:</span>
+        <button id="selectAllBtn" type="button">Select All</button>
+      </div>
+      <p class="hint">If no tabs are selected, all tabs in the window will revolve.</p>
+      <div id="tabsList" class="tabs-list">
+        <!-- سيتم توليد التبويبات المفتوحة هنا عبر الجافاسكريبت -->
+      </div>
+    </div>
+
+    <!-- حقوق المطور -->
+    <footer>
+      Developed by <a href="https://github.com/DangerousAngel" target="_blank">DangerousAngel</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

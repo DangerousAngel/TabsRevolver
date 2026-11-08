@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tabs Revolver by DangerousAngel",
+  "version": "1.0.0",
+  "description": "Automatically revolve through selected tabs with custom intervals and smart auto-pause.",
+  "author": "DangerousAngel (github.com/DangerousAngel)",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tabs Revolver Settings"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
